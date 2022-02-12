@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import s from './User.css'
+import s from './User.module.css'
 
 export default function User({
     avatar,
@@ -19,21 +19,21 @@ export default function User({
                 />
                 <p className={s.name}>{username}</p>
                 <p className={s.tag}>{tag}</p>
-                <p class="location">{location}</p>
+                <p className={s.location}>{location}</p>
             </div>
 
-            <ul class="stats">
-                <li>
-                    <span class="label">Followers</span>
-                    <span class="quantity">{userFollowers}</span>
+            <ul className={s.stats}>
+                <li className={s.statsItem}>
+                    <span className={s.label}>Followers</span>
+                    <span className={s.quantity}>{userFollowers}</span>
                 </li>
-                <li>
-                    <span class="label">Views</span>
-                    <span class="quantity">{userViews}</span>
+                <li className={s.statsItem}>
+                    <span className={s.label}>Views</span>
+                    <span className={s.quantity}>{userViews}</span>
                 </li>
-                <li>
-                    <span class="label">Likes</span>
-                    <span class="quantity">{userLikes}</span>
+                <li className={s.statsItem}>
+                    <span className={s.label}>Likes</span>
+                    <span className={s.quantity}>{userLikes}</span>
                 </li>
             </ul>
         </div>
